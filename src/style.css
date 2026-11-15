@@ -1,0 +1,55 @@
+/* Tema ringkas light/dark untuk MyVault standalone */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --accent: #f1f5f9;
+  --border: #e2e8f0;
+  --destructive: #dc2626;
+  --ring: #6366f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1120;
+    --foreground: #e2e8f0;
+    --card: #111a2e;
+    --card-foreground: #e2e8f0;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --primary: #818cf8;
+    --primary-foreground: #0b1120;
+    --accent: #1e293b;
+    --border: #1e293b;
+    --destructive: #f87171;
+    --ring: #818cf8;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.bg-muted { background-color: var(--muted); }
+.bg-accent { background-color: var(--accent); }
+.bg-primary { background-color: var(--primary); }
+.text-foreground { color: var(--foreground); }
+.text-card-foreground { color: var(--card-foreground); }
+.text-muted-foreground { color: var(--muted-foreground); }
+.text-primary { color: var(--primary); }
+.text-primary-foreground { color: var(--primary-foreground); }
+.text-destructive { color: var(--destructive); }
+.border-border { border-color: var(--border); }
+.ring-ring { --tw-ring-color: var(--ring); }
+.hover\:bg-accent:hover { background-color: var(--accent); }
+.hover\:bg-primary\/90:hover { background-color: var(--primary); opacity: 0.9; }
